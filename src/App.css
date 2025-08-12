@@ -1,38 +1,122 @@
-.App {
+/* Base Container */
+.resume-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #fdfcf7; /* paper-like */
+  background-image: radial-gradient(rgba(0, 0, 0, 0.02) 1px, transparent 1px);
+  background-size: 6px 6px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.resume-header {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.resume-header h1 {
+  font-size: clamp(1.8rem, 2.5vw, 2.2rem);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.resume-header p {
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.resume-header a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+/* Sections (3D card style) */
+.resume-section {
+  margin-bottom: 20px;
+  background: #fffefb;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12),
+              0 4px 6px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resume-section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18),
+              0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #ddd;
+}
+
+.timeline-item {
   display: flex;
-  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.timeline-date {
+  flex: 0 0 150px;
+  font-weight: bold;
+  color: #555;
+}
+
+.timeline-content {
+  flex: 1;
+}
+
+/* Grid Layout */
+.grid-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Skills with Bars */
+.skill-item {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.skill-bar {
+  flex: 1;
+  height: 8px;
+  background: #ddd;
+  margin-left: 10px;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.skill-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #0073e6, #00c6ff);
+  width: var(--skill-level, 70%);
+  transition: width 0.4s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .grid-two {
+    grid-template-columns: 1fr;
   }
-  to {
-    transform: rotate(360deg);
+  .timeline-item {
+    flex-direction: column;
+  }
+  .timeline-date {
+    margin-bottom: 5px;
   }
 }
