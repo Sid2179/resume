@@ -55,7 +55,7 @@ export default function Resume() {
           </div>
 
           <div className="timeline-item">
-            <div className="timeline-date">May 2022 – Dec 2023</div>
+            <div className="timeline-date">May 2022 – Dec 2022</div>
             <div className="timeline-content">
               <h3>eMeasurematic, Inc | Chicago, USA</h3>
               <ul>
