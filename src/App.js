@@ -27,13 +27,13 @@ export default function Resume() {
         <h2>Professional Experience</h2>
         <div className="timeline">
           <div className="timeline-item">
-            <div className="timeline-date">March 2025 – Present</div>
+            <div className="timeline-date">Jan 2025 – Present</div>
             <div className="timeline-content">
               <h3>Capital One| Chicago, IL</h3>
               <ul>
                 <li>Collaborated with cross-functional teams via Jira, and Scrum, improving project efficiency by 20%.</li>
                 <li>Gained experience with CI/CD workflows for automated build, test, and deployment processes.</li>
-                <li>Upgraded 22 services from JDK 8 to JDK 17 and migrated from PCF to VMs.</li>
+                <li>Developed a high-performance API that enabled seamless onboarding of 100,000 new customers.</li>
                 <li>Developed and executed unit and integration tests using Jest and React Testing Library to validate component behavior and UI functionality.</li>
               </ul>
             </div>
