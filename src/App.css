@@ -115,8 +115,11 @@
   }
   .timeline-item {
     flex-direction: column;
+    align-items: flex-start; /* Prevent center alignment issues */
   }
   .timeline-date {
+    flex: unset; /* Remove fixed width */
+    width: 100%; /* Let it span full width */
     margin-bottom: 5px;
   }
 }

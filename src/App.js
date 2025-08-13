@@ -9,7 +9,6 @@ export default function Resume() {
         <h1>Siddharth Malhotra</h1>
         <p>
           <a href="mailto:siddharthmalhotra2170@gmail.com">siddharthmalhotra2170@gmail.com</a> | 312-358-7656 | Chicago, IL | 
-          <a href="#"> LinkedIn</a>
         </p>
       </header>
 
@@ -17,7 +16,7 @@ export default function Resume() {
       <section className="resume-section">
         <h2>Personal Summary</h2>
         <p>
-          Efficiency-driven Full Stack Developer with 4 years of experience designing and implementing secure,
+          Efficiency-driven Full Stack Developer with 3 years of experience designing and implementing secure,
           scalable financial solutions and hands-on expertise in payment gateways, transaction systems, and API integrations.
           Skilled in Agile methodologies, Test-Driven Development (TDD), and performance optimization under high traffic.
         </p>
@@ -28,39 +27,42 @@ export default function Resume() {
         <h2>Professional Experience</h2>
         <div className="timeline">
           <div className="timeline-item">
-            <div className="timeline-date">Apr 2023 – Present</div>
+            <div className="timeline-date">March 2025 – Present</div>
             <div className="timeline-content">
-              <h3>Discover Financial Service | Riverwoods, IL</h3>
+              <h3>Capital One| Chicago, IL</h3>
               <ul>
-                <li>Fixed 1100 failing Selenium test cases for regression tests on the UI side.</li>
-                <li>Implemented JWT with Spring Boot & Spring Security for security layer & role control.</li>
+                <li>Collaborated with cross-functional teams via Jira, and Scrum, improving project efficiency by 20%.</li>
+                <li>Gained experience with CI/CD workflows for automated build, test, and deployment processes.</li>
                 <li>Upgraded 22 services from JDK 8 to JDK 17 and migrated from PCF to VMs.</li>
-                <li>Optimized AWS infrastructure (EC2, S3, Lambda), improving scalability.</li>
+                <li>Developed and executed unit and integration tests using Jest and React Testing Library to validate component behavior and UI functionality.</li>
               </ul>
             </div>
           </div>
 
           <div className="timeline-item">
-            <div className="timeline-date">May 2022 – Feb 2023</div>
+            <div className="timeline-date">April 2023 – March 2025</div>
+            <div className="timeline-content">
+              <h3>Discover Financial Service  | Riverwoods, IL</h3>
+              <ul>
+                <li>Managed version control for 32 services using Git with staging and stashing strategies.</li>
+                <li>Fixed 1100+ failing Selenium test cases and configured Datadog, reducing downtime by 35%.</li>
+                <li>Optimized a SPA in React.js by implementing lazy loading to reduce page load time by 15%.</li>
+                <li>Configured Nginx to disable frontend caching, decreasing client-side issues by 25%.</li>
+                <li>Built dynamic, state-driven UI components using React Hooks (useState, useEffect, useContext) to improve code reusability and maintainability.</li>
+
+              </ul>
+            </div>
+          </div>
+
+          <div className="timeline-item">
+            <div className="timeline-date">May 2022 – Dec 2023</div>
             <div className="timeline-content">
               <h3>eMeasurematic, Inc | Chicago, USA</h3>
               <ul>
-                <li>Developed persistence layer using Hibernate, increasing query performance by 30%.</li>
-                <li>Created and maintained web pages using Angular 11, HTML5, CSS3, JS & Bootstrap.</li>
-                <li>Built logging service using Singleton pattern & Log4j.</li>
-                <li>Performed RDBMS implementation using Oracle, MySQL, MSSQL, and DB2.</li>
-              </ul>
-            </div>
-          </div>
+                <li>Used gRPC and Protocol Buffers for structured communication between the client and server.</li>
+                <li>Integrated server responses to dynamically generate a login page in the UI based on user-specific data.</li>
+                <li>Enhanced the existing UI in Visual Studio using JavaScript ES6, HTML5, and CSS by adding interactive button functionality and a map feature to generate a 2D yard layout.</li>
 
-          <div className="timeline-item">
-            <div className="timeline-date">Oct 2020 – July 2021</div>
-            <div className="timeline-content">
-              <h3>Infosys Technologies | Chandigarh, India</h3>
-              <ul>
-                <li>Built Maven project using Spring Framework (MVC, IOC, AOP) & Microservices.</li>
-                <li>Implemented Singleton Java EE design pattern and RESTful APIs.</li>
-                <li>Worked in Agile environment, attending daily scrums and bi-weekly sprints.</li>
               </ul>
             </div>
           </div>
@@ -78,24 +80,24 @@ export default function Resume() {
         <div>
           <h2>Skills</h2>
           <div className="skill-item">
-            <span>Java 17</span>
+            <span>Java 21</span>
             <div className="skill-bar"><div className="skill-bar-fill" style={{"--skill-level":"95%"}}></div></div>
           </div>
           <div className="skill-item">
             <span>React JS</span>
-            <div className="skill-bar"><div className="skill-bar-fill" style={{"--skill-level":"90%"}}></div></div>
+            <div className="skill-bar"><div className="skill-bar-fill" style={{"--skill-level":"80%"}}></div></div>
           </div>
           <div className="skill-item">
             <span>Spring Boot</span>
             <div className="skill-bar"><div className="skill-bar-fill" style={{"--skill-level":"85%"}}></div></div>
           </div>
           <div className="skill-item">
-            <span>Node JS</span>
+            <span>CSS</span>
             <div className="skill-bar"><div className="skill-bar-fill" style={{"--skill-level":"80%"}}></div></div>
           </div>
           <div className="skill-item">
-            <span>AWS</span>
-            <div className="skill-bar"><div className="skill-bar-fill" style={{"--skill-level":"75%"}}></div></div>
+            <span>GIT</span>
+            <div className="skill-bar"><div className="skill-bar-fill" style={{"--skill-level":"90%"}}></div></div>
           </div>
         </div>
       </section>
